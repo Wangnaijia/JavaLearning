@@ -4,7 +4,7 @@ import org.graalvm.compiler.nodes.java.NewArrayNode;
  * @Author: Wang Naijia
  * @Date: 2021-07-01 10:10:43
  * @LastEditors: Wang Naijia
- * @LastEditTime: 2021-07-01 10:26:20
+ * @LastEditTime: 2021-07-01 10:29:20
  * @Descripttion: 小朋友 A 在和 ta 的小伙伴们玩传信息游戏，游戏规则如下：
 有 n 名玩家，所有玩家编号分别为 0 ～ n-1，其中小朋友 A 的编号为 0
 每个玩家都有固定的若干个可传信息的其他玩家（也可能没有）。传信息的关系是单向的（比如 A 可以向 B 传信息，但 B 不能向 A 传信息）。
@@ -45,11 +45,13 @@ class SolutionLCP07{
     }
     private int dfs(int player, boolean[][] neighbours, int k){
         if(k==0){
+            // 如果搜索到最后一层到达目标点，返回1，没到达返回0
             return neighbours.length - 1 == player ? 1:0;
         }
         int curResult = 0;
         for(int i = 0; i < neighbours[player].length; i++){
             if(neighbours[player][i]){
+                // 将1的情况累加
                 curResult += dfs(i, neighbours, k-1);
             }
         }
