@@ -2,8 +2,8 @@
  * @Author: Wang Naijia
  * @Date: 2021-07-10 10:36:05
  * @LastEditors: Wang Naijia
- * @LastEditTime: 2021-07-10 11:20:59
- * @Descripttion: 创建一个基于时间的键值存储类 TimeMap，它支持下面两个操作：
+ * @LastEditTime: 2021-07-11 09:54:24
+ * @Description: 创建一个基于时间的键值存储类 TimeMap，它支持下面两个操作：
 1. set(string key, string value, int timestamp)
 存储键 key、值 value，以及给定的时间戳 timestamp。
 2. get(string key, int timestamp)
