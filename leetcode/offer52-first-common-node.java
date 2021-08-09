@@ -2,12 +2,12 @@
  * @Author: Wang Naijia
  * @Date: 2021-07-22 01:21:30
  * @LastEditors: Wang Naijia
- * @LastEditTime: 2021-07-22 01:24:07
+ * @LastEditTime: 2021-07-22 02:46:07
  * @Descripttion: 
  */
 
 // Definition for singly-linked list.
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
 
@@ -15,8 +15,7 @@ public class ListNode {
         val = x;
         next = null;
     }
- }
-public class Solution {
+class SolutionOffer52 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode curA = headA;
         ListNode curB = headB;
@@ -52,6 +51,6 @@ public class Solution {
             curB = curB.next;
         }
         return null;
-
+        }
     }
 }

@@ -1,3 +1,4 @@
+package thread_test;
 public class TestThread2 {
     
 }

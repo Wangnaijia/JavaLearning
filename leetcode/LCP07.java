@@ -1,10 +1,9 @@
-import org.graalvm.compiler.nodes.java.NewArrayNode;
 
 /*
  * @Author: Wang Naijia
  * @Date: 2021-07-01 10:10:43
  * @LastEditors: Wang Naijia
- * @LastEditTime: 2021-07-01 10:29:20
+ * @LastEditTime: 2021-07-22 02:43:58
  * @Descripttion: 小朋友 A 在和 ta 的小伙伴们玩传信息游戏，游戏规则如下：
 有 n 名玩家，所有玩家编号分别为 0 ～ n-1，其中小朋友 A 的编号为 0
 每个玩家都有固定的若干个可传信息的其他玩家（也可能没有）。传信息的关系是单向的（比如 A 可以向 B 传信息，但 B 不能向 A 传信息）。
