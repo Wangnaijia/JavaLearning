@@ -1,3 +1,5 @@
+import offer.ListNode;
+
 /*
  * @Author: Wang Naijia
  * @Date: 2021-07-22 01:21:30
